@@ -18,7 +18,7 @@ const Temperature = () => {
       // let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&appid={API key}`
       const respons = await fetch(url);
       const data = await respons.json()
-      const { temp, humidity, pressure, } = data.main;
+      const { temp, humidity, pressure,feels_like } = data.main;
       const { main: weartherMood } = data.weather[0];
       const { name } = data;
       const { speed } = data.wind;
@@ -28,6 +28,7 @@ const Temperature = () => {
         temp,
         humidity,
         pressure,
+        feels_like,
         weartherMood,
         name,
         speed,

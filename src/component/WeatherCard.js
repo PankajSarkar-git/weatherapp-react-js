@@ -6,6 +6,7 @@ const WeatherCard = ({ weartherData , setWeartherState,weartherState}) => {
         temp,
         humidity,
         pressure,
+        feels_like,
         weartherMood,
         name,
         speed,
@@ -63,7 +64,7 @@ const WeatherCard = ({ weartherData , setWeartherState,weartherState}) => {
                 <div className="wearther-info">
                     <div className="temprature">
                         <p>{Math.round(temp)}&deg;C</p>
-                        <p className='pra'>Feels like {Math.round(temp)}&deg;C </p>
+                        <p className='pra'>Feels like {Math.round(feels_like)}&deg;C </p>
                     </div>
                     <div className="description">
                         <div className="weather-condition">
