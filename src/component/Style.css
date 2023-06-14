@@ -1,0 +1,310 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.full-container {
+    border: 2px solid black;
+    width: 50vw;
+    background-color: rgba(222, 225, 223, 0.51);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: transparent;
+    height: 8vh;
+}
+
+.scarch #scarch-bar {
+    font-size: 2.6rem;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding: 0 0.3rem;
+}
+
+.scarch .search-button {
+    font-size: 2.6rem;
+    background-color: rgb(0, 71, 106);
+    padding: 0 0.3rem;
+    border-radius: 0 10px 10px 0px;
+    border: none;
+}
+
+/* main card  */
+
+.main-card {
+    display: grid;
+
+}
+
+.wearther-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    margin: 2rem;
+    padding-bottom: 1rem;
+}
+
+/* .wearther-icon i{
+    font-size: 4rem;
+    padding: 1.5rem;
+    color: rgb(0, 243, 0);
+} */
+.wearther-icon i {
+    font-size: 4rem;
+    color: blue;
+}
+
+.wearther-icon p {
+    font-size: 4rem;
+    color: black;
+}
+
+.wearther-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.temprature {
+    /* background-color: black; */
+    color: rgb(7, 7, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    padding: 1rem 0.5rem;
+    font-size: 3rem;
+    flex-direction: column;
+}
+
+.temprature .pra {
+    font-size: 1rem;
+
+}
+
+.description {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0.5rem;
+    font-size: 3rem
+}
+
+.description .weather-condition {
+    font-size: 2rem;
+}
+
+.description .place {
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
+
+}
+
+.date {
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0.5rem;
+    font-size: 2.5rem;
+
+}
+
+.extra-tem {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: 13vh;
+}
+
+.tow-side {
+    display: flex;
+    align-self: center;
+    font-size: 1.3rem;
+    /* margin-top: 2rem; */
+}
+
+.first-side {
+    color: green;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+
+/* responsiv */
+
+@media (max-width:1374px) {
+    .full-container {
+        width: 80vw;
+    }
+}
+
+@media (max-width:860px) {
+    .scarch #scarch-bar {
+        font-size: 2rem;
+    }
+
+    .scarch .search-button {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 2rem;
+    }
+
+}
+
+@media (max-width:680px) {
+    .scarch #scarch-bar {
+        font-size: 2rem;
+    }
+
+    .scarch .search-button {
+        font-size: 2rem;
+    }
+
+    .date {
+        font-size: 2rem;
+    }
+
+    .first-side {
+
+        font-size: 1.4rem;
+
+    }
+
+    .tow-side {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:550px) {
+    .full-container {
+        width: 90vw;
+    }
+
+    .scarch #scarch-bar {
+        font-size: 1.5rem;
+    }
+
+    .scarch .search-button {
+        font-size: 1.5rem;
+    }
+
+    .wearther-icon i {
+        font-size: 3rem;
+    }
+
+    .wearther-icon p {
+        font-size: 3rem;
+    }
+
+    .temprature {
+        font-size: 2rem;
+    }
+
+    .temprature .pra {
+        font-size: 1rem;
+
+    }
+
+    .description {
+
+        font-size: 2rem
+    }
+
+    .description .weather-condition {
+        font-size: 2rem;
+    }
+
+    .description .place {
+        font-size: 1.1rem;
+
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    .full-container {
+        width: 100vw;
+    }
+
+    .scarch #scarch-bar {
+        font-size: 1rem;
+    }
+
+    .scarch .search-button {
+        font-size: 1rem;
+    }
+
+    .wearther-icon i {
+        font-size: 2.5rem;
+    }
+
+    .wearther-icon p {
+        font-size: 2.5rem;
+    }
+
+    .temprature {
+        font-size: 1.5rem;
+    }
+
+    .temprature .pra {
+        font-size: 1rem;
+
+    }
+
+    .description {
+
+        font-size: 1.5rem
+    }
+
+    .description .weather-condition {
+        font-size: 1.5rem;
+    }
+
+    .description .place {
+        font-size: 1rem;
+
+    }
+
+    .date {
+        font-size: 1.1rem;
+    }
+
+    .first-side {
+
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-right: 8px;
+
+    }
+
+    .tow-side {
+        font-size: 0.8rem;
+        padding: 0;
+
+    }
+}
